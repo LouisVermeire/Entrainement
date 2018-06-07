@@ -52,7 +52,7 @@ véérifié que le repertoire est propre:
 git status
 
 Enovyé sur gitHUb:
-git push --all
+git push --all upstream
 
 > se connecter aveec les identifiants git hub
 
@@ -65,7 +65,7 @@ Voila, vous avez envoyé une demande de modification.
 Pour recuperer, les mises a jour:
 sur le temrinal:
 
-git pull --all
+git pull upstream master
 
 
 

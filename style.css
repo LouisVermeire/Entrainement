@@ -41,7 +41,7 @@ chaque couche de mon site
 text-align: center;
 margin: auto;
 }
-#Synopsis1{
+#Synopsis2 ,#Synopsis1{
 padding:  0% 2%;
 text-align: justify;
 border: dotted white 1px ;
@@ -52,17 +52,17 @@ transition-timing-function: ease-in-out;
 
 }
 
-#Synopsis1 p{
+#Synopsis2 p,#Synopsis1 p{
 	font-size: 14pt;
 	text-indent: 5%;
 	font-stretch: 10pt;
 }
 
-#Synopsis1 h2{
+#Synopsis2 h2,#Synopsis1 h2{
 	font-size:20pt;
 }
 
-#Synopsis1:hover{
+#Synopsis2:hover ,#Synopsis1:hover{
 	background-color: #6D191B;
 	border-radius: 5px;
 }
