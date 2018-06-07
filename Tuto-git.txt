@@ -1,0 +1,77 @@
+
+Etapes préliminaires:
+
+Creation du dossier local git :
+mkdir git
+Initialisation de git dans le dossier:
+git init
+
+Etape GitHub:
+Aller sur le projet de l'intégrateur, et le FORK ( cela va creer la copie du projet dans votre projet GutHub) 
+Ensuite, vous êtes redirigez votre votre copie github (votrepseudo/nomduprojet)
+Vous faites, clone, et recuperez le lien.
+
+Etape sur le terminal:
+Aller dans le dossier git
+
+Faire une copie sur le pc;
+git clone (lien du clone)
+
+ON va dans le dossier crée:
+cd (nom du projet)
+
+Vérification de l'origin et upstream:
+git remote -v
+
+Normalement il y a que l'origin qui apparait avec le lien de votre pseudo et nom du projet.
+Il faut donc configuré l'url de l'intégrateur avec upstream;
+
+On se rend sur gitHub, et cette fois ci on clone, l'url du projet de l'intégrateur ET NON LA VOTRE
+
+Sur le terminal, on creer l'upstream:
+git remote add upstream (lien du projet de l'intégrateur)
+
+On verifie avec:
+git remote -v
+
+
+------
+Modifier le fichier et le sauvegarder.
+
+Ajouter le fichier à l'index:
+git add --all 
+ou
+git add nom du fichier
+
+Faire le commit:
+git commit -a -m "message de mofication"
+ou 
+git commit nomdufihcier -m "message de modification"
+
+véérifié que le repertoire est propre:
+git status
+
+Enovyé sur gitHUb:
+git push --all
+
+> se connecter aveec les identifiants git hub
+
+---- 
+Sur GitHUb, aller sur sont projet, (pseudo/nomduprojet)
+faire new pull request > create pull request > et confirmer.
+
+Voila, vous avez envoyé une demande de modification.
+
+Pour recuperer, les mises a jour:
+sur le temrinal:
+
+git pull --all
+
+
+
+
+
+----
+
+git config user.name "clementbonjour"
+git config user.email "clementriquet16@gmail.com"
