@@ -1,3 +1,55 @@
 body{
-	width: 70%;
+background-color: #6D071A;
+font-family: Marvel;
+color: white;
+}
+.clearfix:after {
+display: block;
+content: '';
+clear: both;
+/* astuce du clearfix :
+lorsqu'on utilise des float (left ou right) on est obligé de
+mettre un element block qui fait un clear derriere le dernier
+element floattant .... sinon ca foutra le bazar !!!
+c'est comme ca ....
+Pour éviter de devoir écrire une balise qui ne sert qu'a faire un clear
+dans mon html
+- par exemple <div style="clear:both"></div> ...
+je pars du principe ou le pseudo element :after peut faire le job
+concretement :
+<div class="clearfix"> <!-- element qui englobe des float -->
+:before
+<div style="float:left">machin qui float</div>
+<div style="float:right">machin qui float aussi</div>
+:after <!-- after va faire le clear grace a la classe clearfix -->
+</div>
+*/
+}
+.contenu {
+width: 80%;
+margin: auto;
+/* ici je me sers de la classe .contenu pour centrer mon contenu dans
+chaque couche de mon site
+<div id="header">
+<div class="contenu">
+	mon contenu centré a 1000px de large...
+</div>
+</div>
+*/
+}
+#main{
+text-align: center;
+margin: auto;
+}
+#Synopsis1{
+	padding:  0% 2%;
+text-align: justify;
+border: dotted white 1px ;
+border-radius: 13px;
+ -webkit-transition: background-color 1s, border-radius 1s, -webkit-transform 1.5s;
+}
+
+#Synopsis1:hover{
+	background-color: #6D191B;
+	border-radius: 5px;
 }
