@@ -46,7 +46,9 @@ margin: auto;
 text-align: justify;
 border: dotted white 1px ;
 border-radius: 13px;
- -webkit-transition: background-color 1s, border-radius 1s, -webkit-transform 1.5s;
+transition-property: background-color, border-radius;
+transition-duration: 1s;
+transition-timing-function: ease-in-out;
 }
 
 #Synopsis1:hover{
